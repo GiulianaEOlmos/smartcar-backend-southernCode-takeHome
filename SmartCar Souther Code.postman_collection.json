@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "b38c3553-4f5a-4a6e-b535-728f81d949c0",
+		"name": "SmartCar Souther Code",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "10015398"
+	},
+	"item": [
+		{
+			"name": "Vehicle Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BaseURL}}/api/v1/vehicles/1234"
+			},
+			"response": []
+		},
+		{
+			"name": "Security",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BaseURL}}/api/v1/vehicles/1234/doors"
+			},
+			"response": []
+		},
+		{
+			"name": "Fuel Range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BaseURL}}/api/v1/vehicles/1234/fuel"
+			},
+			"response": []
+		},
+		{
+			"name": "Battery Range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BaseURL}}/api/v1/vehicles/1235/battery"
+			},
+			"response": []
+		},
+		{
+			"name": "Start/Stop Engine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"action\": \"START\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseURL}}/api/v1/vehicles/1234/engine"
+			},
+			"response": []
+		}
+	]
+}
